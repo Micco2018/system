@@ -1,0 +1,381 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	background: url(../img/main.png);
+}
+
+.logo {
+	padding-top: 25px;
+	margin-bottom: 15px;
+}
+
+.logo img {
+	width: 350px;
+}
+
+.manage-lists {
+	padding-left: 15px;
+	width: 160px;
+}
+
+.manage-lists li {
+	margin: 15px;
+	width: 50px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.manage-lists li h3 {
+	width: 50px;
+	height: 50px;
+	background: #4eb3e7;
+	border-radius: 8px;
+	font-size: 24px;
+	line-height: 50px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.manage-lists li:nth-child(even) h3 {
+	background: #017932;
+}
+
+.manage-lists li h3.fa-sign-out,
+.manage-lists li h3.fa-map,
+.manage-lists li h3.fa-users {
+	background: #c80120;
+}
+
+.manage-lists li p {
+	font-size: 12px;
+	color: #FFFFFF;
+	margin-top: 5px;
+	line-height: 12px;
+}
+
+
+/*点击显示的表格区域*/
+
+.table-box li {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	background: #fff;
+	transform: translate(-50%, -50%);
+	border-radius: 4px;
+	max-width: 100%;
+}
+
+.bcg {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.table-box li p {
+	padding: 0 15px;
+	background: #222;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.table-box li p span {
+	font-size: 14px;
+	line-height: 35px;
+	color: #b5b5b5;
+}
+
+.table-box li p span:nth-child(2) {
+	cursor: pointer;
+}
+
+
+/*点击显示的表格区域结束*/
+
+
+/*表格*/
+
+.table-box table {
+	height: 400px;
+	overflow-y: auto;
+	display: block;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	min-width: auto;
+	max-width: 1000px;
+}
+
+
+/*滚动条样式*/
+
+.table-box table::-webkit-scrollbar {
+	/*滚动条整体样式*/
+	/*高宽分别对应横竖滚动条的尺寸*/
+	width: 5px;
+	height: 5px;
+}
+
+.table-box table::-webkit-scrollbar-thumb {
+	/*滚动条里面小方块*/
+	border-radius: 5px;
+	background: #333;
+}
+
+.table-box table::-webkit-scrollbar-track {
+	/*滚动条里面轨道*/
+	border-radius: 0;
+	background: #EEEEEE;
+}
+
+.table-box table th {
+	min-width: 120px;
+	vertical-align: baseline;
+	padding: 10px 30px 5px 15px;
+	background-color: #f2f2f2;
+	border: none;
+	text-align: left;
+	color: #828282;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.table-box table td {
+	min-width: 120px;
+	padding: 10px 30px 6px 15px;
+	border: 1px solid #efefef;
+	font-size: 12px;
+	color: #828282;
+	word-break: keep-all;
+}
+
+.table-box table td img {
+	width: 100px;
+	height: 100px;
+}
+
+
+/*表格结束*/
+
+
+/*操作表格*/
+
+.serch {
+	padding: 10px 15px;
+}
+
+.serch input {
+	border: 1px solid #DDDDDD;
+	width: 300px;
+	line-height: 25px;
+	padding: 6px 12px;
+	font-size: 12px;
+}
+
+.serch button {
+	width: 100px;
+	line-height: 39px;
+	outline: none;
+	border: none;
+	background: #078CD6;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 16px;
+}
+
+.table-box table td span {
+	padding: 0 5px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+
+/*操作表格结束*/
+
+
+/*修改模态框*/
+
+.change {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #FFFFFF;
+	padding: 25px 50px;
+	border-radius: 4px;
+	width: 700px;
+	text-align: center;
+	z-index: 5;
+}
+
+.txt1 {
+	padding: 20px 0 30px;
+}
+
+.changeTxt {
+	padding: 10px;
+	position: relative;
+}
+
+.changeTxt label {
+	line-height: 25px;
+	font-size: 14px;
+	padding-right: 10px;
+	display: inline-block;
+	width: 88px;
+	text-align: right;
+}
+
+.changeTxt input {
+	width: 200px;
+	line-height: 25px;
+	font-size: 14px;
+	padding: 6px 15px;
+	border: 1px solid #DDDDDD;
+	color: #808080;
+	border-radius: 4px;
+}
+
+.changeTxt textarea {
+	border: 1px solid #EEEEEE;
+	vertical-align: top;
+	padding: 6px 15px;
+	color: #808080;
+	border-radius: 4px;
+	font-size: 14px;
+	line-height: 20px;
+	overflow-y: auto;
+}
+
+
+/*滚动条样式*/
+
+.changeTxt textarea::-webkit-scrollbar {
+	/*滚动条整体样式*/
+	/*高宽分别对应横竖滚动条的尺寸*/
+	width: 5px;
+	height: 5px;
+}
+
+.changeTxt textarea::-webkit-scrollbar-thumb {
+	/*滚动条里面小方块*/
+	border-radius: 5px;
+	background: #333;
+}
+
+.changeTxt textarea::-webkit-scrollbar-track {
+	/*滚动条里面轨道*/
+	border-radius: 0;
+	background: #EEEEEE;
+}
+
+.bcgForChange {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 3;
+}
+
+.titleForChange {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(100% - 30px);
+	line-height: 35px;
+	font-size: 14px;
+	padding: 0 15px;
+	background: #222;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.titleForChange span {
+	font-size: 14px;
+	line-height: 35px;
+}
+
+.titleForChange span:nth-child(2) {
+	cursor: pointer;
+}
+
+.change button {
+	display: inline-block;
+	width: 150px;
+	line-height: 40px;
+	background: #DDDDDD;
+	font-size: 14px;
+	text-align: center;
+	color: #FFFFFF;
+	border: none;
+	outline: none;
+}
+
+.change .save {
+	background: #078CD6;
+	margin-left: 20px;
+}
+
+.changeTxt .fileImg {
+	position: absolute;
+	top: 9px;
+	left: 99px;
+	height: 38px;
+	opacity: 0;
+	width: 98px;
+	padding: 0;
+	margin: 0;
+}
+
+.changeTxt .chooseImg {
+	display: inline-block;
+	width: 98px;
+	height: 38px;
+	background: #078CD6;
+	color: #FFFFFF;
+	border-radius: 4px;
+	font-size: 14px;
+	line-height: 40px;
+	text-align: center;
+	margin-bottom: 110px;
+	margin-right: 151px;
+}
+
+.changeTxt .img-box1 {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border: 1px dashed #333;
+	position: absolute;
+	top: 60px;
+	left: 110px;
+}
+
+.changeTxt .img-box1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.js_tableBox li .js_grade1 span{
+	padding-top: 10px;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+.js_tableBox li .js_grade1 input.a{
+	width: 30px;
+	height: 20px;
+	vertical-align: middle;
+}
